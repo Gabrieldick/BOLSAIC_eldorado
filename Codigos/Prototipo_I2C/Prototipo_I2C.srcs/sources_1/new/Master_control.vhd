@@ -17,10 +17,8 @@
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
-
-
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_1164.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -32,14 +30,33 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Master_control is
-    Port ( SCL : in STD_LOGIC;
-           SDA : in STD_LOGIC;
-           lda_SDA : out STD_LOGIC);
+  port
+  (
+    SCL     : in std_logic;
+    SDA     : in std_logic;
+    clk     : in std_logic;
+    rst     : in std_logic;
+    SDA_bit : in std_logic_vector (2 downto 0);
+    lda_SDA : out std_logic);
 end Master_control;
 
 architecture Behavioral of Master_control is
+  type tipoestado is (Idle, Startprep, Start, Stopprep, Stop, SendADD, SendData, ReceiveACK);
+  signal state      : tipoestado;
+  signal next_state : tipoestado;
 
 begin
+    process (clk, reset)
+    begin
+        if rst = '1' then
+            state <= Idle;
+        elsif rising_edge(clk) then
+            state <= next_state;         
+        end if;
+    end process;
 
-
+    process (state)
+    begin
+        
+    end process;
 end Behavioral;

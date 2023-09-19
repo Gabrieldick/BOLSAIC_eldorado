@@ -50,12 +50,21 @@ architecture Behavioral of Master_protocol is
   signal Inc_SDA    : std_logic;
   signal Start_prot : std_logic;
   signal Stop_prot  : std_logic;
+  signal rst_SDA_bit  : std_logic;
+  signal Send_data      : std_logic;
   signal Internal_clock : std_logic;
-  signal SDA_bit    : std_logic_vector (2 downto 0) := "000";
+  signal SDA_bit        : std_logic_vector (2 downto 0) := "000";
 
 begin
 
-  process (clk, rst, inc_SDA) -- Reg that counts what Bit of data i'm sending or receiving
+  Clock_Divider_inst : entity Clk_gen
+  port map (
+      clk => clk,
+      divide_by => divide_by,
+      divided_clk => Internal_clock
+  );
+
+  process (clk, rst_SDA_bit, inc_SDA) -- Reg that counts what Bit of data i'm sending or receiving
   begin
     if rst = '1' then
       SDA_bit <= "000";
@@ -69,41 +78,42 @@ begin
   process (clk)
   begin
     if rising_edge(clk) then
-      
+
     end if;
   end process;
 
   process (clk, rst, SDA_bit) -- Reg that sets bit of data that SDA recieves
   begin
     if rst = '1' then
-      SDA <= '0';
+      SDA <= '1';
     elsif rising_edge(clk) then
       if Start_prot = '1' then
         SCL <= '1';
         SDA <= '0';
 
-
       elsif Stop_prot = '1' then
+        SCL <= '1';
+        SDA <= '1';
 
-      else
+      elsif Send_data = '1' then
 
         case SDA_bit is
           when "000" =>
-            SDA <= Data(0);
+            SDA_data <= Data(0);
           when "001" =>
-            SDA <= Data(1);
+            SDA_data <= Data(1);
           when "010" =>
-            SDA <= Data(2);
+            SDA_data <= Data(2);
           when "011" =>
-            SDA <= Data(3);
+            SDA_data <= Data(3);
           when "100" =>
-            SDA <= Data(4);
+            SDA_data <= Data(4);
           when "101" =>
-            SDA <= Data(5);
+            SDA_data <= Data(5);
           when "110" =>
-            SDA <= Data(6);
+            SDA_data <= Data(6);
           when "111" =>
-            SDA <= Data(7);
+            SDA_data <= Data(7);
           when others =>
             null;
         end case;
@@ -115,8 +125,15 @@ begin
 end Behavioral;
 
 /*
+Recebo clock do master
+adapto clock e seto SCL pra 1
+Abaixo SDA
+continuo pulsando SCL recebendo clock_modified sempre mudando SDA quando SCL descer
+após ultimo envio no final leio SDA para saber o ACK
+na descida de SCL seto SDA para 0
+Seto SCL para 1 e subo SDA
+
 Tenho que controlar o SCL de diferentes formas no stop/start, na execução e no idle
 Tenho que mudar SDA apenas na descida do SCL
 Tenho que implementar a FSM que controlará este módulo
-*/
-
+* /
