@@ -1,0 +1,7 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+D:/BOLSAIC_eldorado/Codigos/i2c_project/i2c_project.sim/sim_1/impl/timing/xsim/i2c_test_bench_time_impl.v,1696802959,verilog,,D:/BOLSAIC_eldorado/Codigos/i2c_project/i2c_project.srcs/sources_1/imports/I2C_Master-master/i2c_master.v,,IBUF_HD1;IBUF_UNIQ_BASE_;IOBUF_UNIQ_BASE_;SSEG;glbl;top,,,,,,,,
+D:/BOLSAIC_eldorado/Codigos/i2c_project/i2c_project.srcs/sim_1/imports/I2C_Master-master/i2c_test_bench.v,1587260765,verilog,,,,i2c_test_bench,,,,,,,,
+D:/BOLSAIC_eldorado/Codigos/i2c_project/i2c_project.srcs/sources_1/imports/I2C_Master-master/i2c_master.v,1587260765,verilog,,D:/BOLSAIC_eldorado/Codigos/i2c_project/i2c_project.srcs/sim_1/imports/I2C_Master-master/i2c_test_bench.v,,i2c_master,,,,,,,,

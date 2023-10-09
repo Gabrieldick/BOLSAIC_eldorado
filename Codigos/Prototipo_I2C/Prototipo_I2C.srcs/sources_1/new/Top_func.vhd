@@ -17,10 +17,8 @@
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
-
-
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_1164.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -32,14 +30,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Top_func is
-    Port ( clk : in STD_LOGIC;
-           rst : in STD_LOGIC;
-           master_out : in STD_LOGIC_VECTOR (7 downto 0));
+  port
+  (
+    clk        : in std_logic;
+    rst        : in std_logic;
+    master_out : in std_logic_vector (7 downto 0));
 end Top_func;
 
 architecture Behavioral of Top_func is
 
 begin
-
-
 end Behavioral;
