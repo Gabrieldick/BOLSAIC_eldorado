@@ -1,0 +1,20 @@
+Markers:
+Start signal
+Last slave address bit
+Read/Write bit
+Ack
+Ack register add
+First data bit
+Ack data byte 1
+Ack data byte 2
+Stop condition
+
+Start condition
+Slave add finished with write
+Repeat condition to start new communication
+Read signal
+1st byte read
+2nd byte read
+NACK Recieved
+Stop condition
+

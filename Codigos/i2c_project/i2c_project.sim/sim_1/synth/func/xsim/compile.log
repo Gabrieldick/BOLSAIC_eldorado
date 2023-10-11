@@ -1,7 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BOLSAIC_eldorado/Codigos/i2c_project/i2c_project.sim/sim_1/impl/timing/xsim/i2c_test_bench_time_impl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IBUF_UNIQ_BASE_
-INFO: [VRFC 10-311] analyzing module IBUF_HD1
-INFO: [VRFC 10-311] analyzing module IOBUF_UNIQ_BASE_
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BOLSAIC_eldorado/Codigos/i2c_project/i2c_project.sim/sim_1/synth/func/xsim/i2c_test_bench_func_synth.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SSEG
 INFO: [VRFC 10-311] analyzing module i2c_master
 INFO: [VRFC 10-311] analyzing module top

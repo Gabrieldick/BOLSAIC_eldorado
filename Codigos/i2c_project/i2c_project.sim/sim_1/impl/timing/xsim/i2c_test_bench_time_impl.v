@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-// Date        : Sun Oct  8 19:09:19 2023
+// Date        : Mon Oct  9 14:08:17 2023
 // Host        : Notebook-GMD running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               D:/BOLSAIC_eldorado/Codigos/i2c_project/i2c_project.sim/sim_1/impl/timing/xsim/i2c_test_bench_time_impl.v
