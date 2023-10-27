@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "tb_I2CMASTER_behav" "xil_defaultlib.tb_I2CMASTER" -log "elaborate.log" 
