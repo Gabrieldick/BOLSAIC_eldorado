@@ -1,7 +1,0 @@
-0.7
-2020.2
-Oct 13 2023
-20:21:30
-/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/I2C_vivado_master_and_slave/I2C_vivado_master_and_slave.sim/sim_1/synth/func/xsim/i2c_tb_func_synth.v,1698256693,verilog,,/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/i2c-1/i2c_slave.v,,glbl;i2c_master,,,,,,,,
-/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/i2c-1/i2c_slave.v,1698252311,verilog,,/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/i2c-1/i2c_tb.v,,i2c_slave,,,,,,,,
-/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/i2c-1/i2c_tb.v,1698256689,verilog,,,,i2c_tb,,,,,,,,

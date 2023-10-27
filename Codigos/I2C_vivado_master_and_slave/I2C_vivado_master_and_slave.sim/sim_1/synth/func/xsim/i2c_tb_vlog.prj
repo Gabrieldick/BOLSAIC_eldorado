@@ -1,8 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"i2c_tb_func_synth.v" \
-"../../../../../../i2c-1/i2c_slave.v" \
-"../../../../../../i2c-1/i2c_tb.v" \
-
-# Do not sort compile order
-nosort

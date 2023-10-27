@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/i2c-1/i2c_master.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module i2c_master
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/i2c-1/i2c_slave.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module i2c_slave
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/i2c-1/i2c_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module i2c_tb

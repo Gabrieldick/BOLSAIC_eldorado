@@ -1,8 +1,0 @@
-Time resolution is 1 ps
-Beginning write/read tests
-FAIL: write=cafe | read=0000
-FAIL: write=beef | read=0000
-FAIL: write=d0d0 | read=0000
-FAIL: write=3e3e | read=0000
-FAIL: delayed read
-$finish called at time : 1060 ns : File "/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/i2c-1/i2c_tb.v" Line 178
