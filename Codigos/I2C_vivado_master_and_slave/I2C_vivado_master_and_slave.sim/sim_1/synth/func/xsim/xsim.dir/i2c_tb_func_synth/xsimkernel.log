@@ -2,3 +2,6 @@ Running: xsim.dir/i2c_tb_func_synth/xsimk -simmode gui -wdb i2c_tb_func_synth.wd
 Design successfully loaded
 Design Loading Memory Usage: 24448 KB (Peak: 24456 KB)
 Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 106704 KB (Peak: 163716 KB)
+Simulation CPU Usage: 70 ms
