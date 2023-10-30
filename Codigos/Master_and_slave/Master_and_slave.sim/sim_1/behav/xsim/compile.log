@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sim_1/new/tb_I2C_MASTER_SLAVE.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_MASTER_SLAVE'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sim_1/new/TB_Top_Func.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Top_func_tb'

@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "tb_DEMO_MPU6050_behav" "xil_defaultlib.tb_DEMO_MPU6050" -log "elaborate.log" 

@@ -1,0 +1,254 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Oct 30 15:15:21 2023
+# Process ID: 34792
+# Current directory: /home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.runs/synth_1
+# Command line: vivado -log Top_func.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_func.tcl
+# Log file: /home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.runs/synth_1/Top_func.vds
+# Journal file: /home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.runs/synth_1/vivado.jou
+# Running On: pc8ce55rt, OS: Linux, CPU Frequency: 3907.621 MHz, CPU Physical cores: 4, Host memory: 24864 MB
+#-----------------------------------------------------------
+source Top_func.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1319.312 ; gain = 0.023 ; free physical = 12898 ; free virtual = 20191
+Command: synth_design -top Top_func -part xc7k70tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34814
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1699.090 ; gain = 379.777 ; free physical = 12269 ; free virtual = 19561
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top_func' [/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/new/Top_func.vhd:72]
+	Parameter DEVICE bound to: 8'b00111000 
+INFO: [Synth 8-3491] module 'I2CMASTER' declared at '/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/imports/Codigos/master/master.srcs/sources_1/imports/vhdl/i2cmaster.vhd:42' bound to instance 'I2CMASTER_module' of component 'I2CMASTER' [/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/new/Top_func.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'I2CMASTER' [/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/imports/Codigos/master/master.srcs/sources_1/imports/vhdl/i2cmaster.vhd:67]
+	Parameter DEVICE bound to: 8'b00111000 
+INFO: [Synth 8-256] done synthesizing module 'I2CMASTER' (0#1) [/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/imports/Codigos/master/master.srcs/sources_1/imports/vhdl/i2cmaster.vhd:67]
+WARNING: [Synth 8-5640] Port 'read_done' is missing in component declaration [/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/new/Top_func.vhd:99]
+	Parameter DEVICE bound to: 8'b00111000 
+INFO: [Synth 8-3491] module 'I2CSLAVE' declared at '/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/imports/Codigos/slave/slave.srcs/sources_1/imports/vhdl/i2cslave.vhd:13' bound to instance 'I2CSLAVE_module' of component 'I2CSLAVE' [/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/new/Top_func.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'I2CSLAVE' [/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/imports/Codigos/slave/slave.srcs/sources_1/imports/vhdl/i2cslave.vhd:33]
+	Parameter DEVICE bound to: 8'b00111000 
+INFO: [Synth 8-256] done synthesizing module 'I2CSLAVE' (0#1) [/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/imports/Codigos/slave/slave.srcs/sources_1/imports/vhdl/i2cslave.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Top_func' (0#1) [/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/new/Top_func.vhd:72]
+WARNING: [Synth 8-3848] Net READ_DONE in module/entity Top_func does not have driver. [/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/new/Top_func.vhd:68]
+WARNING: [Synth 8-7129] Port SCL_IN in module I2CMASTER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port READ_DONE in module Top_func is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1786.059 ; gain = 466.746 ; free physical = 12154 ; free virtual = 19447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.871 ; gain = 484.559 ; free physical = 12153 ; free virtual = 19447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbg676-2
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbg676-2
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1811.875 ; gain = 492.562 ; free physical = 12153 ; free virtual = 19447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1835.625 ; gain = 516.312 ; free physical = 12116 ; free virtual = 19411
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 7     
+	  14 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 6     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 7     
+	   6 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 9     
+	   7 Input    3 Bit        Muxes := 1     
+	  18 Input    3 Bit        Muxes := 1     
+	  13 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	  12 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	  12 Input    1 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 57    
+	  20 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 5     
+	  11 Input    1 Bit        Muxes := 3     
+	   7 Input    1 Bit        Muxes := 2     
+	  13 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 3     
+	  19 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 4     
+	  18 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 2     
+	  10 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port READ_DONE in module Top_func is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1948.180 ; gain = 628.867 ; free physical = 12006 ; free virtual = 19309
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1948.180 ; gain = 628.867 ; free physical = 12013 ; free virtual = 19317
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1948.180 ; gain = 628.867 ; free physical = 12012 ; free virtual = 19316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.180 ; gain = 628.867 ; free physical = 12006 ; free virtual = 19306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.180 ; gain = 628.867 ; free physical = 12006 ; free virtual = 19306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.180 ; gain = 628.867 ; free physical = 12006 ; free virtual = 19306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.180 ; gain = 628.867 ; free physical = 12006 ; free virtual = 19306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.180 ; gain = 628.867 ; free physical = 12006 ; free virtual = 19306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.180 ; gain = 628.867 ; free physical = 12006 ; free virtual = 19306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     2|
+|2     |LUT1  |     2|
+|3     |LUT2  |    12|
+|4     |LUT3  |    14|
+|5     |LUT4  |    29|
+|6     |LUT5  |    41|
+|7     |LUT6  |    92|
+|8     |MUXF7 |     1|
+|9     |FDCE  |    66|
+|10    |FDPE  |    11|
+|11    |FDRE  |    11|
+|12    |IBUF  |    24|
+|13    |OBUF  |    33|
+|14    |OBUFT |     1|
++------+------+------+
+
+Report Instance Areas: 
++------+-------------------+----------+------+
+|      |Instance           |Module    |Cells |
++------+-------------------+----------+------+
+|1     |top                |          |   339|
+|2     |  I2CMASTER_module |I2CMASTER |   138|
+|3     |  I2CSLAVE_module  |I2CSLAVE  |   141|
++------+-------------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.180 ; gain = 628.867 ; free physical = 12006 ; free virtual = 19306
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.180 ; gain = 628.867 ; free physical = 12005 ; free virtual = 19305
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.188 ; gain = 628.867 ; free physical = 12005 ; free virtual = 19305
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1948.188 ; gain = 0.000 ; free physical = 12298 ; free virtual = 19598
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2078.926 ; gain = 0.000 ; free physical = 12237 ; free virtual = 19537
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: f86e558b
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 2078.961 ; gain = 759.648 ; free physical = 12237 ; free virtual = 19537
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1512.840; main = 1336.736; forked = 379.768
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2846.824; main = 2078.930; forked = 989.195
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2102.938 ; gain = 0.000 ; free physical = 12236 ; free virtual = 19536
+INFO: [Common 17-1381] The checkpoint '/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.runs/synth_1/Top_func.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_func_utilization_synth.rpt -pb Top_func_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 30 15:15:52 2023...
