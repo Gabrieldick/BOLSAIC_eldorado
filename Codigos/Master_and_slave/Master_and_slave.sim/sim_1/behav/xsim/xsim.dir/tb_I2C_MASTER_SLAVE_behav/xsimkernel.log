@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_I2C_MASTER_SLAVE_behav/xsimk.exe -simmode gui -wdb tb_I2C_MASTER_SLAVE_behav.wdb -simrunnum 0 -socket 64892
+Design successfully loaded
+Design Loading Memory Usage: 8100 KB (Peak: 8100 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 9328 KB (Peak: 9328 KB)
+Simulation CPU Usage: 0 ms

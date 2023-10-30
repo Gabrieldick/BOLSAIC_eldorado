@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/master/master.srcs/sources_1/imports/vhdl/i2cmaster.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'I2CMASTER'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/master/master.srcs/sim_1/imports/test/tb_i2cmaster.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2CMASTER'

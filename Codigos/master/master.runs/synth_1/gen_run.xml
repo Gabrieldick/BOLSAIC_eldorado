@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7k70tfbg676-2" LaunchTime="1698411362">
-  <File Type="VDS-TIMING-PB" Name="I2CMASTER_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="I2CMASTER_timing_summary_synth.rpt"/>
-  <File Type="RDS-RDS" Name="I2CMASTER.vds"/>
-  <File Type="REPORTS-TCL" Name="I2CMASTER_reports.tcl"/>
   <File Type="PA-TCL" Name="I2CMASTER.tcl"/>
-  <File Type="RDS-DCP" Name="I2CMASTER.dcp"/>
-  <File Type="RDS-PROPCONSTRS" Name="I2CMASTER_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="I2CMASTER_reports.tcl"/>
+  <File Type="RDS-RDS" Name="I2CMASTER.vds"/>
   <File Type="RDS-UTIL" Name="I2CMASTER_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="I2CMASTER_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="I2CMASTER.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/vhdl/i2cmaster.vhd">
@@ -38,9 +35,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

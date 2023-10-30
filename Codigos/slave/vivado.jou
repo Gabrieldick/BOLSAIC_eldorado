@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Oct 29 17:33:36 2023
+# Process ID: 16120
+# Current directory: D:/BOLSAIC_eldorado/Codigos/slave
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9952 D:\BOLSAIC_eldorado\Codigos\slave\slave.xpr
+# Log file: D:/BOLSAIC_eldorado/Codigos/slave/vivado.log
+# Journal file: D:/BOLSAIC_eldorado/Codigos/slave\vivado.jou
+# Running On: Notebook-GMD, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16948 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/BOLSAIC_eldorado/Codigos/slave/slave.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_simulation
+source TB_I2CSLAVE_READ.tcl
+run 10 ms
+save_wave_config {D:/BOLSAIC_eldorado/Codigos/slave/TB_I2CSLAVE_READ_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/BOLSAIC_eldorado/Codigos/slave/TB_I2CSLAVE_READ_behav.wcfg
+set_property xsim.view D:/BOLSAIC_eldorado/Codigos/slave/TB_I2CSLAVE_READ_behav.wcfg [get_filesets sim_1]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+close_sim
