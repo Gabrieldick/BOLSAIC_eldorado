@@ -94,25 +94,25 @@ begin
                            RD_S       => RD_S,
                            READ_DONE  => READ_DONE );
 
-    CLOCK_master: process
+    CLOCK_master: process --3,33Ghz
 	begin
 		while (RUNNING_M = '1') loop
 			MCLK_M <= '1';
-			wait for 10 ns;
+			wait for 150 ns;
 			MCLK_M <= '0';
-			wait for 10 ns;
+			wait for 150 ns;
 		end loop;
 		wait;
 	end process CLOCK_master;
 
 
-    CLOCK_slave: process
+    CLOCK_slave: process --1Mhz
 	begin
 		while (RUNNING_S = '1') loop
 			MCLK_S <= '1';
-			wait for 10 ns;
+			wait for 500 ns;
 			MCLK_S <= '0';
-			wait for 10 ns;
+			wait for 500 ns;
 		end loop;
 		wait;
 	end process CLOCK_slave;
@@ -140,7 +140,7 @@ begin
 		nRST_M <= '0';
 		SRST <= '0';
 		--DIN <= (others=>'0');
-		DIN_M <= x"EE";
+		DIN_M <= x"F7"; --Registrador que pretendo escrever
 		RD_M <= '0';
 		WE_M <= '1';
 		wait for 1000 ns;
@@ -148,7 +148,7 @@ begin
 		nRST_S <= '1';
 		wait until QUEUED'event and QUEUED = '0';
 		WE_M <= '1';
-		DIN_M <= x"AA";
+		DIN_M <= x"F3";
 		wait until QUEUED'event and QUEUED = '0';
 		WE_M <= '0';
 		RD_M <= '1';

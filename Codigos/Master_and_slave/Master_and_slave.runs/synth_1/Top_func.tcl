@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.runs/synth_1/Top_func.tcl"
+  variable script "D:/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.runs/synth_1/Top_func.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,7 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache /tmp/.Xil_gmdick/Vivado-6613-pc8ce55rt/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/smigl/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-5312-Notebook-GMD/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -80,18 +80,18 @@ create_project -in_memory -part xc7k70tfbg676-2
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.cache/wt [current_project]
-set_property parent.project_path /home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.xpr [current_project]
+set_property webtalk.parent_dir D:/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.cache/wt [current_project]
+set_property parent.project_path D:/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.cache/ip [current_project]
+set_property ip_output_repo d:/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  /home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/imports/Codigos/master/master.srcs/sources_1/imports/vhdl/i2cmaster.vhd
-  /home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/imports/Codigos/slave/slave.srcs/sources_1/imports/vhdl/i2cslave.vhd
-  /home/gmdick/Desktop/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/new/Top_func.vhd
+  D:/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/imports/Codigos/slave/slave.srcs/sources_1/imports/vhdl/i2cslave.vhd
+  D:/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/new/Top_func.vhd
+  D:/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/sources_1/imports/Codigos/master/master.srcs/sources_1/imports/vhdl/i2cmaster.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -103,6 +103,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental D:/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.srcs/utils_1/imports/synth_1/Top_func.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

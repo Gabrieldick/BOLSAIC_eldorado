@@ -11,128 +11,162 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="422.000001 us"></ZoomEndTime>
-      <Cursor1Time time="20.000000 us"></Cursor1Time>
+      <ZoomEndTime time="325.400001 us"></ZoomEndTime>
+      <Cursor1Time time="0.000000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="137"></NameColumnWidth>
-      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="27" />
-   <wvobject type="logic" fp_name="/Top_func_tb/MCLK_M">
-      <obj_property name="ElementShortName">MCLK_M</obj_property>
-      <obj_property name="ObjectShortName">MCLK_M</obj_property>
+   <WVObjectSize size="32" />
+   <wvobject type="divider" fp_name="divider185">
+      <obj_property name="label">Master Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#808080</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/nRST_M">
-      <obj_property name="ElementShortName">nRST_M</obj_property>
-      <obj_property name="ObjectShortName">nRST_M</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/SRST">
-      <obj_property name="ElementShortName">SRST</obj_property>
-      <obj_property name="ObjectShortName">SRST</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/TIC">
-      <obj_property name="ElementShortName">TIC</obj_property>
-      <obj_property name="ObjectShortName">TIC</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/Top_func_tb/DIN_M">
-      <obj_property name="ElementShortName">DIN_M[7:0]</obj_property>
-      <obj_property name="ObjectShortName">DIN_M[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/RD_M">
-      <obj_property name="ElementShortName">RD_M</obj_property>
-      <obj_property name="ObjectShortName">RD_M</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/WE_M">
-      <obj_property name="ElementShortName">WE_M</obj_property>
-      <obj_property name="ObjectShortName">WE_M</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/Top_func_tb/DOUT_M">
-      <obj_property name="ElementShortName">DOUT_M[7:0]</obj_property>
-      <obj_property name="ObjectShortName">DOUT_M[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/NACK">
-      <obj_property name="ElementShortName">NACK</obj_property>
-      <obj_property name="ObjectShortName">NACK</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/QUEUED">
-      <obj_property name="ElementShortName">QUEUED</obj_property>
-      <obj_property name="ObjectShortName">QUEUED</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/DATA_VALID">
-      <obj_property name="ElementShortName">DATA_VALID</obj_property>
-      <obj_property name="ObjectShortName">DATA_VALID</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/STOP">
-      <obj_property name="ElementShortName">STOP</obj_property>
-      <obj_property name="ObjectShortName">STOP</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/Top_func_tb/STATUS">
-      <obj_property name="ElementShortName">STATUS[2:0]</obj_property>
-      <obj_property name="ObjectShortName">STATUS[2:0]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/MCLK_S">
-      <obj_property name="ElementShortName">MCLK_S</obj_property>
-      <obj_property name="ObjectShortName">MCLK_S</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/nRST_S">
-      <obj_property name="ElementShortName">nRST_S</obj_property>
-      <obj_property name="ObjectShortName">nRST_S</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/Top_func_tb/DATA_IN_S">
-      <obj_property name="ElementShortName">DATA_IN_S[7:0]</obj_property>
-      <obj_property name="ObjectShortName">DATA_IN_S[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/Top_func_tb/ADDRESS">
-      <obj_property name="ElementShortName">ADDRESS[7:0]</obj_property>
-      <obj_property name="ObjectShortName">ADDRESS[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/Top_func_tb/DATA_OUT_S">
-      <obj_property name="ElementShortName">DATA_OUT_S[7:0]</obj_property>
-      <obj_property name="ObjectShortName">DATA_OUT_S[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/WR_S">
-      <obj_property name="ElementShortName">WR_S</obj_property>
-      <obj_property name="ObjectShortName">WR_S</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/RD_S">
-      <obj_property name="ElementShortName">RD_S</obj_property>
-      <obj_property name="ObjectShortName">RD_S</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/READ_DONE">
-      <obj_property name="ElementShortName">READ_DONE</obj_property>
-      <obj_property name="ObjectShortName">READ_DONE</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/RUNNING">
-      <obj_property name="ElementShortName">RUNNING</obj_property>
-      <obj_property name="ObjectShortName">RUNNING</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/Top_func_tb/counter">
-      <obj_property name="ElementShortName">counter[7:0]</obj_property>
-      <obj_property name="ObjectShortName">counter[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/uut/SCL_MtoS">
+   <wvobject fp_name="/Top_func_tb/uut/SCL_MtoS" type="logic">
       <obj_property name="ElementShortName">SCL_MtoS</obj_property>
       <obj_property name="ObjectShortName">SCL_MtoS</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/uut/SDA_MtoS">
+   <wvobject fp_name="/Top_func_tb/uut/SDA_MtoS" type="logic">
       <obj_property name="ElementShortName">SDA_MtoS</obj_property>
       <obj_property name="ObjectShortName">SDA_MtoS</obj_property>
       <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/uut/SCL_StoM">
+   <wvobject type="divider" fp_name="divider186">
+      <obj_property name="label">Slave Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#808080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/uut/SCL_StoM" type="logic">
       <obj_property name="ElementShortName">SCL_StoM</obj_property>
       <obj_property name="ObjectShortName">SCL_StoM</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/Top_func_tb/uut/SDA_StoM">
+   <wvobject fp_name="/Top_func_tb/uut/SDA_StoM" type="logic">
       <obj_property name="ElementShortName">SDA_StoM</obj_property>
       <obj_property name="ObjectShortName">SDA_StoM</obj_property>
       <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider183">
+      <obj_property name="label">Mster Inputs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#808080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/DIN_M" type="array">
+      <obj_property name="ElementShortName">DIN_M[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DIN_M[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/RD_M" type="logic">
+      <obj_property name="ElementShortName">RD_M</obj_property>
+      <obj_property name="ObjectShortName">RD_M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/WE_M" type="logic">
+      <obj_property name="ElementShortName">WE_M</obj_property>
+      <obj_property name="ObjectShortName">WE_M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/MCLK_M" type="logic">
+      <obj_property name="ElementShortName">MCLK_M</obj_property>
+      <obj_property name="ObjectShortName">MCLK_M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/nRST_M" type="logic">
+      <obj_property name="ElementShortName">nRST_M</obj_property>
+      <obj_property name="ObjectShortName">nRST_M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/SRST" type="logic">
+      <obj_property name="ElementShortName">SRST</obj_property>
+      <obj_property name="ObjectShortName">SRST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/TIC" type="logic">
+      <obj_property name="ElementShortName">TIC</obj_property>
+      <obj_property name="ObjectShortName">TIC</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider183">
+      <obj_property name="label">Mster Outputs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#808080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/DOUT_M" type="array">
+      <obj_property name="ElementShortName">DOUT_M[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DOUT_M[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/NACK" type="logic">
+      <obj_property name="ElementShortName">NACK</obj_property>
+      <obj_property name="ObjectShortName">NACK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/QUEUED" type="logic">
+      <obj_property name="ElementShortName">QUEUED</obj_property>
+      <obj_property name="ObjectShortName">QUEUED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/DATA_VALID" type="logic">
+      <obj_property name="ElementShortName">DATA_VALID</obj_property>
+      <obj_property name="ObjectShortName">DATA_VALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/STOP" type="logic">
+      <obj_property name="ElementShortName">STOP</obj_property>
+      <obj_property name="ObjectShortName">STOP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/STATUS" type="array">
+      <obj_property name="ElementShortName">STATUS[2:0]</obj_property>
+      <obj_property name="ObjectShortName">STATUS[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider184">
+      <obj_property name="label">Slave Inputs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#808080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/DATA_IN_S" type="array">
+      <obj_property name="ElementShortName">DATA_IN_S[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_IN_S[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/MCLK_S" type="logic">
+      <obj_property name="ElementShortName">MCLK_S</obj_property>
+      <obj_property name="ObjectShortName">MCLK_S</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/nRST_S" type="logic">
+      <obj_property name="ElementShortName">nRST_S</obj_property>
+      <obj_property name="ObjectShortName">nRST_S</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider184">
+      <obj_property name="label">Slave Outputs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#808080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/DATA_OUT_S" type="array">
+      <obj_property name="ElementShortName">DATA_OUT_S[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_OUT_S[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/ADDRESS" type="array">
+      <obj_property name="ElementShortName">ADDRESS[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDRESS[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/WR_S" type="logic">
+      <obj_property name="ElementShortName">WR_S</obj_property>
+      <obj_property name="ObjectShortName">WR_S</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/RD_S" type="logic">
+      <obj_property name="ElementShortName">RD_S</obj_property>
+      <obj_property name="ObjectShortName">RD_S</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/READ_DONE" type="logic">
+      <obj_property name="ElementShortName">READ_DONE</obj_property>
+      <obj_property name="ObjectShortName">READ_DONE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_func_tb/counter" type="array">
+      <obj_property name="ElementShortName">counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[7:0]</obj_property>
    </wvobject>
 </wave_config>
