@@ -41,6 +41,9 @@ entity TopFunc is
     DATA_VALID        : out   std_logic;
     QUEUED            : out   std_logic;
     DIN               : in    std_logic_vector(7 downto 0);
+    --display outputs
+    Anode_Activate    : out   STD_LOGIC_VECTOR(3 downto 0); -- 4 Anode signals
+    LED_out           : out   STD_LOGIC_VECTOR(6 downto 0);
 
     --Counter Slave signals
     Dout_teste_slave  : out   std_logic_vector(7 downto 0);
@@ -66,22 +69,9 @@ architecture Behavioral of TopFunc is
       Dout_teste       : out   std_logic_vector(7 downto 0);
       DATA_VALID_teste : out   std_logic;
       QUEUED           : out   std_logic;
-      --display 1 outputs
-      output10         : out   std_logic;
-      output11         : out   std_logic;
-      output12         : out   std_logic;
-      output13         : out   std_logic;
-      output14         : out   std_logic;
-      output15         : out   std_logic;
-      output16         : out   std_logic;
-      --display 0 outputs
-      output00         : out   std_logic;
-      output01         : out   std_logic;
-      output02         : out   std_logic;
-      output03         : out   std_logic;
-      output04         : out   std_logic;
-      output05         : out   std_logic;
-      output06         : out   std_logic
+      --display outputs
+      Anode_Activate   : out   STD_LOGIC_VECTOR(3 downto 0); -- 4 Anode signals
+      LED_out          : out   STD_LOGIC_VECTOR(6 downto 0)
     );
   end component;
 
@@ -96,7 +86,6 @@ architecture Behavioral of TopFunc is
     );
   end component;
 
-
 begin
 
   Display_master_1: Display_master
@@ -110,7 +99,9 @@ begin
       SDA              => SDA_M,
       SCL              => SCL_M,
       Dout_teste       => Dout_teste_master,
-      DATA_VALID_teste => DATA_VALID
+      DATA_VALID_teste => DATA_VALID,
+      Anode_Activate   => Anode_Activate,
+      LED_out          => LED_out
     );
 
   Counter_slave_1: Counter_slave

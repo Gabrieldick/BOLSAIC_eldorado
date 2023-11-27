@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../DisplayMaster_RTClkSlave.srcs/sources_1/imports/new/Counter_slave.vhd" \
+"../../../../DisplayMaster_RTClkSlave.srcs/sources_1/imports/new/Display_master.vhd" \
+"../../../../DisplayMaster_RTClkSlave.srcs/sources_1/new/RealTimeClock.vhd" \
+"../../../../DisplayMaster_RTClkSlave.srcs/sources_1/imports/new/TopFunc.vhd" \
+"../../../../DisplayMaster_RTClkSlave.srcs/sources_1/imports/new/hex_controller.vhd" \
+"../../../../DisplayMaster_RTClkSlave.srcs/sources_1/imports/new/i2cmaster.vhd" \
+"../../../../DisplayMaster_RTClkSlave.srcs/sources_1/imports/new/i2cslave.vhd" \
+"../../../../DisplayMaster_RTClkSlave.srcs/sim_1/imports/new/TopFunc_TB.vhd" \
+
+# Do not sort compile order
+nosort

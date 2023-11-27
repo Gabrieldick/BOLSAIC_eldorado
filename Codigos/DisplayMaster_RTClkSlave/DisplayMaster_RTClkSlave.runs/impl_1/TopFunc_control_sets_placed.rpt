@@ -1,0 +1,91 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Sun Nov 26 13:12:34 2023
+| Host         : Notebook-GMD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopFunc_control_sets_placed.rpt
+| Design       : TopFunc
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    13 |
+|    Minimum number of control sets                        |    13 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    46 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    13 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |              72 |           23 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               4 |            2 |
+| Yes          | No                    | Yes                    |              52 |           21 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+---------------------------------------------------+------------------+------------------+----------------+--------------+
+|   Clock Signal  |                   Enable Signal                   | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------+---------------------------------------------------+------------------+------------------+----------------+--------------+
+|  MCLK_IBUF_BUFG | Display_master_1/I_I2CMASTER_0/p_11_in            | RST_IBUF         |                1 |              1 |         1.00 |
+|  MCLK_IBUF_BUFG | Display_master_1/I_I2CMASTER_0/p_8_in             | RST_IBUF         |                1 |              1 |         1.00 |
+|  MCLK_IBUF_BUFG |                                                   |                  |                2 |              2 |         1.00 |
+|  MCLK_IBUF_BUFG | Display_master_1/I_I2CMASTER_0/counter[3]_i_1_n_0 | RST_IBUF         |                1 |              4 |         4.00 |
+|  SCLK_IBUF_BUFG | Counter_slave_1/I_I2CITF/next_state0              |                  |                2 |              4 |         2.00 |
+|  SCLK_IBUF_BUFG | Counter_slave_1/I_I2CITF/state[3]_i_1__0_n_0      | RST_IBUF         |                1 |              4 |         4.00 |
+|  MCLK_IBUF_BUFG | Display_master_1/I_I2CMASTER_0/state[4]_i_1_n_0   | RST_IBUF         |                3 |              5 |         1.67 |
+|  SCLK_IBUF_BUFG | Counter_slave_1/RTClk/seconds_counter[5]_i_1_n_0  | RST_IBUF         |                2 |              6 |         3.00 |
+|  MCLK_IBUF_BUFG | Display_master_1/I_I2CMASTER_0/p_0_out[7]         | RST_IBUF         |                4 |              7 |         1.75 |
+|  MCLK_IBUF_BUFG | Display_master_1/I_I2CMASTER_0/DOUT[7]_i_1_n_0    | RST_IBUF         |                3 |              8 |         2.67 |
+|  MCLK_IBUF_BUFG | Display_master_1/I_I2CMASTER_0/E[0]               | RST_IBUF         |                5 |             16 |         3.20 |
+|  MCLK_IBUF_BUFG |                                                   | RST_IBUF         |               13 |             34 |         2.62 |
+|  SCLK_IBUF_BUFG |                                                   | RST_IBUF         |               10 |             38 |         3.80 |
++-----------------+---------------------------------------------------+------------------+------------------+----------------+--------------+
+
+

@@ -29,6 +29,10 @@ architecture Behavioral of TopFunc_TB is
   -- Clock period definitions
   constant CLK_PERIOD : time := 10 ns; -- Adjust as needed
 
+
+  signal Anode_Activate: STD_LOGIC_VECTOR(3 downto 0);
+  signal LED_out: STD_LOGIC_VECTOR(6 downto 0);
+
 begin
   -- Instantiate the design under test
   uut: entity work.TopFunc
@@ -43,6 +47,8 @@ begin
       SCL_S             => SCL,
       SDA_M             => SDA,
       SCL_M             => SCL,
+      Anode_Activate    => Anode_Activate,
+      LED_out           => LED_out,
       Data_valid        => DATA_VALID,
       Dout_teste_master => Dout_teste_master_TB,
       SCLK              => SCLK_TB,
