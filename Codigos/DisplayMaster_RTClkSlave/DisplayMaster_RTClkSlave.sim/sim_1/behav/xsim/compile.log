@@ -1,2 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/BOLSAIC_eldorado/Codigos/DisplayMaster_RTClkSlave/DisplayMaster_RTClkSlave.srcs/sources_1/imports/new/Counter_slave.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Counter_slave'
 INFO: [VRFC 10-163] Analyzing VHDL file "D:/BOLSAIC_eldorado/Codigos/DisplayMaster_RTClkSlave/DisplayMaster_RTClkSlave.srcs/sources_1/imports/new/Display_master.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'Display_master'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/BOLSAIC_eldorado/Codigos/DisplayMaster_RTClkSlave/DisplayMaster_RTClkSlave.srcs/sources_1/imports/new/TopFunc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TopFunc'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/BOLSAIC_eldorado/Codigos/DisplayMaster_RTClkSlave/DisplayMaster_RTClkSlave.srcs/sim_1/imports/new/TopFunc_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TopFunc_TB'

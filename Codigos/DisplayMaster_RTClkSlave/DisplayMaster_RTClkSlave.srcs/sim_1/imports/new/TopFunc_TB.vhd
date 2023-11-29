@@ -9,9 +9,11 @@ end entity;
 architecture Behavioral of TopFunc_TB is
     -- Signals for testbench
     signal MCLK_TB       : std_logic := '0';
+        signal clk       : std_logic := '0';
+
     signal SCLK_TB       : std_logic := '0';
     signal RST_TB        : std_logic := '0';
-    signal DIN          : std_logic_vector(7 downto 0);
+    signal DIN          : std_logic_vector(7 downto 0) := "00000000";
     signal RD       : std_logic := '0';
     signal WE        : std_logic := '0';
     signal RUNNING_M    : std_logic := '1';
@@ -21,9 +23,6 @@ architecture Behavioral of TopFunc_TB is
     Signal SDA          : std_logic;
     signal Data_Valid : std_logic;
     
-
-    signal Dout_teste_master_TB : std_logic_vector(7 downto 0) := (others => '0');
-    signal Dout_teste_slave_TB  : std_logic_vector(7 downto 0) := (others => '0');
 
 
   -- Clock period definitions
@@ -37,6 +36,7 @@ begin
   -- Instantiate the design under test
   uut: entity work.TopFunc
     port map (
+    clk => clk,
       MCLK              => MCLK_TB,
       RST               => RST_TB,
       RD                => RD,
@@ -50,11 +50,18 @@ begin
       Anode_Activate    => Anode_Activate,
       LED_out           => LED_out,
       Data_valid        => DATA_VALID,
-      Dout_teste_master => Dout_teste_master_TB,
-      SCLK              => SCLK_TB,
-      Dout_teste_slave  => Dout_teste_slave_TB
+      SCLK              => SCLK_TB
     );
 
+ CLOCK_general: process --3,33Ghz
+  begin
+    while (RUNNING_M = '1') loop
+      clk <= not clk;
+      wait for CLK_PERIOD/2;
+    end loop;
+    wait;
+  end process;
+  
   CLOCK_master: process --3,33Ghz
   begin
     while (RUNNING_M = '1') loop

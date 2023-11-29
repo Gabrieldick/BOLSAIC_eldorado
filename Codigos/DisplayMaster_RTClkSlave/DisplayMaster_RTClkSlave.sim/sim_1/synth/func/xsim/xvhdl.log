@@ -1,0 +1,9 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/BOLSAIC_eldorado/Codigos/DisplayMaster_RTClkSlave/DisplayMaster_RTClkSlave.sim/sim_1/synth/func/xsim/TopFunc_TB_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'I2CMASTER'
+INFO: [VRFC 10-3107] analyzing entity 'I2CSLAVE'
+INFO: [VRFC 10-3107] analyzing entity 'RealTimeClock'
+INFO: [VRFC 10-3107] analyzing entity 'Counter_slave'
+INFO: [VRFC 10-3107] analyzing entity 'Display_master'
+INFO: [VRFC 10-3107] analyzing entity 'TopFunc'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/BOLSAIC_eldorado/Codigos/DisplayMaster_RTClkSlave/DisplayMaster_RTClkSlave.srcs/sim_1/imports/new/TopFunc_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TopFunc_TB'

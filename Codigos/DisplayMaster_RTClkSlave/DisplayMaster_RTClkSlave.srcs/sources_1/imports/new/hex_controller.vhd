@@ -14,6 +14,7 @@ architecture STRUCTURAL of hex_controller is
 
 
 begin
+
   process (Input)
   begin
     case Input is

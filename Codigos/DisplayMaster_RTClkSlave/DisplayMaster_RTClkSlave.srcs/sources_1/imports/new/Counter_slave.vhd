@@ -35,7 +35,6 @@ entity Counter_slave is
     Port ( Clk : in STD_LOGIC;
            Rst : in STD_LOGIC;
            SDA : inout STD_LOGIC;
-           Dout_teste: out std_logic_vector(7 downto 0);
            SCL : inout STD_LOGIC);
 end Counter_slave;
 
@@ -129,12 +128,13 @@ nRST <= not(Rst);
 --            DATA_IN <= std_logic_vector(to_unsigned(to_integer(unsigned( DATA_IN )) + 1, 8));
 --        end if;
 --    end process;
+
+
     DATA_IN <= "00" & sec;
-    Dout_teste <= DATA_IN;
 --  open drain PAD pull up 1.5K needed
-	SCL <= 'H' when SCL_OUT='1' else '0';
+	SCL <= 'Z' when SCL_OUT='1' else '0';
 	SCL_IN <= to_UX01(SCL);
-	SDA <= 'H' when SDA_OUT='1' else '0';
+	SDA <= 'Z' when SDA_OUT='1' else '0';
 	SDA_IN <= to_UX01(SDA);
 	
 end Behavioral;

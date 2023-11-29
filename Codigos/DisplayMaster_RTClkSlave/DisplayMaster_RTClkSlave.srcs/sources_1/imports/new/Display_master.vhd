@@ -38,7 +38,6 @@ entity Display_master is
     SDA              : inout std_logic;
     SCL              : inout std_logic;
     DIN              : in    std_logic_vector(7 downto 0);
-    Dout_teste       : out   std_logic_vector(7 downto 0);
     QUEUED           : out   std_logic;
     DATA_VALID_teste : out   std_logic;
     --display outputs
@@ -170,11 +169,10 @@ begin
     end if;
   end process;
   DATA_VALID_teste <= DATA_VALID;
-  Dout_teste       <= Data_OUT;
   --  open drain PAD pull up 1.5K needed
-  SCL    <= 'H' when SCL_OUT = '1' else '0';
+  SCL    <= 'Z' when SCL_OUT = '1' else '0';
   SCL_IN <= to_UX01(SCL);
-  SDA    <= 'H' when SDA_OUT = '1' else '0';
+  SDA    <= 'Z' when SDA_OUT = '1' else '0';
   SDA_IN <= to_UX01(SDA);
 
   -- 7-segment display controller

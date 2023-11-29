@@ -30,12 +30,13 @@ library IEEE;
 
 entity TopFunc is
   port (
+    clk              : in    std_logic;
     --Display master signals
     MCLK              : in    std_logic;
     RST               : in    std_logic;
+    RST_confirm               : out    std_logic;
     RD                : in    STD_LOGIC;
     WE                : in    STD_LOGIC;
-    Dout_teste_master : out   std_logic_vector(7 downto 0);
     SDA_M             : inout std_logic;
     SCL_M             : inout std_logic;
     DATA_VALID        : out   std_logic;
@@ -46,7 +47,6 @@ entity TopFunc is
     LED_out           : out   STD_LOGIC_VECTOR(6 downto 0);
 
     --Counter Slave signals
-    Dout_teste_slave  : out   std_logic_vector(7 downto 0);
     SDA_S             : inout std_logic;
     SCL_S             : inout std_logic;
     SCLK              : in    std_logic
@@ -66,7 +66,6 @@ architecture Behavioral of TopFunc is
       SDA              : inout std_logic;
       SCL              : inout std_logic;
       DIN              : in    std_logic_vector(7 downto 0);
-      Dout_teste       : out   std_logic_vector(7 downto 0);
       DATA_VALID_teste : out   std_logic;
       QUEUED           : out   std_logic;
       --display outputs
@@ -81,7 +80,6 @@ architecture Behavioral of TopFunc is
       Clk        : in    STD_LOGIC;
       Rst        : in    STD_LOGIC;
       SDA        : inout STD_LOGIC;
-      Dout_teste : out   std_logic_vector(7 downto 0);
       SCL        : inout STD_LOGIC
     );
   end component;
@@ -90,7 +88,7 @@ begin
 
   Display_master_1: Display_master
     port map (
-      Clk              => MCLK,
+      Clk              => clk,
       Rst              => RST,
       RD               => RD,
       WE               => WE,
@@ -98,7 +96,6 @@ begin
       QUEUED           => QUEUED,
       SDA              => SDA_M,
       SCL              => SCL_M,
-      Dout_teste       => Dout_teste_master,
       DATA_VALID_teste => DATA_VALID,
       Anode_Activate   => Anode_Activate,
       LED_out          => LED_out
@@ -106,12 +103,14 @@ begin
 
   Counter_slave_1: Counter_slave
     port map (
-      Clk        => SCLK,
+      Clk        => clk,
       Rst        => RST,
       SDA        => SDA_S,
-      SCL        => SCL_S,
-      Dout_teste => Dout_teste_slave
+      SCL        => SCL_S
     );
+    
+    
+    RST_confirm <= RST;
 
 end architecture;
 

@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Sun Nov 26 13:12:33 2023
+| Date         : Tue Nov 28 18:19:51 2023
 | Host         : Notebook-GMD
 | Design       : design_1
 | Device       : xc7a100t-csg324-1--
