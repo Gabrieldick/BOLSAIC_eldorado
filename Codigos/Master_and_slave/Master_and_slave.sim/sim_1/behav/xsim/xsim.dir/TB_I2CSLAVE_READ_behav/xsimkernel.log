@@ -1,7 +1,0 @@
-Running: xsim.dir/TB_I2CSLAVE_READ_behav/xsimk.exe -simmode gui -wdb TB_I2CSLAVE_READ_behav.wdb -simrunnum 0 -socket 64535
-Design successfully loaded
-Design Loading Memory Usage: 8916 KB (Peak: 8916 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 9464 KB (Peak: 9464 KB)
-Simulation CPU Usage: 0 ms

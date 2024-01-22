@@ -1,1 +1,0 @@
---incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "TB_I2CSLAVE_READ_behav" "xil_defaultlib.TB_I2CSLAVE_READ" -log "elaborate.log" 

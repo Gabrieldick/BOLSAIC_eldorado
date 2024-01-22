@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"TopFunc_TB_func_synth.vhd" \
-"../../../../../DisplayMaster_RTClkSlave.srcs/sim_1/imports/new/TopFunc_TB.vhd" \
-
-# Do not sort compile order
-nosort

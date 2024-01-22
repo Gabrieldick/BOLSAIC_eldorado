@@ -1,5 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BOLSAIC_eldorado/Codigos/Master_and_slave/Master_and_slave.sim/sim_1/impl/timing/xsim/Top_func_tb_time_impl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module I2CMASTER
-INFO: [VRFC 10-311] analyzing module I2CSLAVE
-INFO: [VRFC 10-311] analyzing module Top_func
-INFO: [VRFC 10-311] analyzing module glbl
